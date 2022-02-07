@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.product.mapper.ProductMapper" >
+
+    <resultMap id="baseResult" type="com.example.product.entry.Product">
+        <id column="id" property="id"  ></id>
+        <result column="product_name" property="productName"  ></result>
+        <result column="product_price" property="productPrice"  ></result>
+
+    </resultMap>
+
+    <select id="selectProductList" resultMap="baseResult">
+        select id, product_name, product_price   from product
+    </select>
+
+
+</mapper>
+

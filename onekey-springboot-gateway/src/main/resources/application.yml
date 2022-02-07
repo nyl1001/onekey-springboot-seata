@@ -1,0 +1,54 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: test_route
+          uri: https://www.baidu.com
+          predicates:
+            - Query=url
+
+        - id: cart_route
+          uri: lb://onekey-springboot-cart
+          predicates:
+            - Path=/api/cart/**
+          filters:
+            - RewritePath=/api/(?<segment>.*),/$\{segment}
+
+        - id: coupon_route
+          uri: lb://onekey-springboot-coupon
+          predicates:
+            - Path=/api/coupon/**
+          filters:
+            - RewritePath=/api/(?<segment>.*),/$\{segment}
+
+        - id: oss_route
+          uri: lb://onekey-springboot-oss
+          predicates:
+            - Path=/api/oss/**
+          filters:
+            - RewritePath=/api/(?<segment>.*),/$\{segment}
+
+        - id: short_route
+          uri: lb://onekey-springboot-short
+          predicates:
+            - Path=/api/short/**
+          filters:
+            - RewritePath=/api/(?<segment>.*),/$\{segment}
+
+        - id: es_route
+          uri: lb://onekey-springboot-es
+          predicates:
+            - Path=/api/es/**
+          filters:
+            - RewritePath=/api/(?<segment>.*),/$\{segment}
+
+        - id: es_product
+          uri: lb://onekey-springboot-product
+          predicates:
+            - Path=/api/product/**
+          filters:
+            - RewritePath=/api/(?<segment>.*),/$\{segment}
+
+
+
+
