@@ -6,7 +6,7 @@ nacos-server、seata-server的部署请直接参考：
 
 https://github.com/nyl1001/onekey-springcloud-docker
 
-## 不同mysql db之间分布式事务问题解决方案示例
+## 1 不同mysql db之间分布式事务问题解决方案示例
 
 product项目
 
@@ -31,7 +31,7 @@ public void updateProjectById(Product product){
 }
 ```
 
-## mysql db和redis混合场景下的分布式事务问题解决方案示例
+## 2 mysql db和redis混合场景下的分布式事务问题解决方案示例
 
 coupon项目
 
