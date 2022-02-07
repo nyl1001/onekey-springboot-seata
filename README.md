@@ -10,7 +10,6 @@ https://github.com/nyl1001/onekey-springcloud-docker
 
 product项目
 
-updateProductById
 
 ```
 /**
@@ -33,8 +32,9 @@ public void updateProductById(Product product){
 
 直接访问下列接口进行验证：
 
+```
 curl -X POST -H "Content-Type:application/json" -d "{\"id\":1,\"productName\":\"test api\",\"productPrice\":\"100.20\"}" http://localhost:9005/product/productController/updateProductById
-
+```
 
 ## 2 mysql db和redis混合场景下的分布式事务问题解决方案示例
 
@@ -54,8 +54,9 @@ public String deductWareHouse(@RequestParam("commodityId") String commodityId,
 
 直接访问下列接口进行验证：
 
+```
 curl -X GET http://localhost:9003/coupon/redisController/deduct?commodityId=1&count=2
-
+```
 
 ## 3 其他
 
