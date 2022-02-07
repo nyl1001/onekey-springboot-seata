@@ -60,7 +60,7 @@ curl -X GET http://localhost:9003/coupon/redisController/deduct?commodityId=1&co
 
 ## 3 其他
 
-请在自己的业务测试数据库（对应本项目的默认数据库）导入下列数据库文件完成初始数据导入：
+请在自己的业务测试数据库（对应本项目的默认数据库）导入下列数据库文件完成测试数据导入：
 
 onekey-springboot-seata/onekey-springboot-seata-product/src/main/resources/sql/db.sql
 
