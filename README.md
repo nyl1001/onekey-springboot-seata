@@ -1,5 +1,5 @@
 # spring boot 整合spring cloud、seata、nacos和gateway解决分布式事务难题
-本人花了整整3天时间踩完所有坑，为你提供现成的源码成果，并提供详细的说明文档。
+本人花了整整3天时间踩完所有坑，为你提供现成的源码成果，并提供详细的说明文档（持续更新中）。
 一直觉得直接上源码是最实在的。
 
 nacos-server、seata-server的部署请直接参考：
@@ -47,7 +47,7 @@ public String deductWareHouse(@RequestParam("commodityId") String commodityId,
 }
 ```
 
-## 其他
+## 3 其他
 请在自己的业务测试数据库（对应本项目的默认数据库）导入下列数据库文件完成初始数据导入：
 
 onekey-springboot-seata/onekey-springboot-product/src/main/resources/sql/db.sql
