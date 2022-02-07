@@ -58,7 +58,7 @@ public String deductWareHouse(@RequestParam("commodityId") String commodityId,
 curl -X GET http://localhost:9003/coupon/redisController/deduct?commodityId=1&count=2
 ```
 
-## 3 本示例是以nacos作为注册中心和配置中心，对于以zookeeper作为注册中心和配置中心的，可以参考官网样例
+## 3 本示例项目是以nacos作为注册中心和配置中心，对于以zookeeper作为注册中心和配置中心的项目，可以参考官网上的如下样例
 
 https://github.com/seata/seata-samples/tree/master/springboot-dubbo-seata-zk
 
