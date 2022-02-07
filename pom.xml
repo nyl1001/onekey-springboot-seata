@@ -22,10 +22,9 @@
     </properties>
 
     <modules>
-        <module>onekey-springboot-common</module>
-        <module>onekey-springboot-coupon</module>
-        <module>onekey-springboot-gateway</module>
-        <module>onekey-springboot-product</module>
+        <module>onekey-springboot-seata-common</module>
+        <module>onekey-springboot-seata-coupon</module>
+        <module>onekey-springboot-seata-product</module>
     </modules>
 
     <build>
