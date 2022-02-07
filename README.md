@@ -1,4 +1,4 @@
-# spring boot 整合spring cloud、seata、nacos和gateway解决分布式事务难题
+# spring boot 整合spring cloud、seata、nacos和gateway解决分布式事务问题的参考示例
 本人花了整整3天时间踩完所有坑，为你提供现成的源码成果，并提供详细的说明文档（持续更新中）。
 一直觉得直接上源码是最实在的。
 
