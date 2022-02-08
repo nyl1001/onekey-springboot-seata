@@ -14,8 +14,8 @@ CREATE TABLE IF NOT EXISTS `undo_log` (
     `context`       VARCHAR(128) NOT NULL COMMENT 'undo_log context,such as serialization',
     `rollback_info` LONGBLOB     NOT NULL COMMENT 'rollback info',
     `log_status`    INT(11)      NOT NULL COMMENT '0:normal status,1:defense status',
-    `log_created`   timestamp     NOT NULL COMMENT 'create datetime',
-    `log_modified`  timestamp     NOT NULL COMMENT 'modify datetime',
+    `log_created`   timestamp     NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT 'create datetime',
+    `log_modified`  timestamp     NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT 'modify datetime',
     PRIMARY KEY (`id`),
     UNIQUE KEY `ux_undo_log` (`xid`, `branch_id`)
 ) ENGINE = InnoDB AUTO_INCREMENT = 1 DEFAULT CHARSET = utf8 COMMENT ='AT transaction mode undo table';
@@ -80,8 +80,8 @@ CREATE TABLE IF NOT EXISTS `undo_log` (
     `context`       VARCHAR(128) NOT NULL COMMENT 'undo_log context,such as serialization',
     `rollback_info` LONGBLOB     NOT NULL COMMENT 'rollback info',
     `log_status`    INT(11)      NOT NULL COMMENT '0:normal status,1:defense status',
-    `log_created`   timestamp     NOT NULL COMMENT 'create datetime',
-    `log_modified`  timestamp     NOT NULL COMMENT 'modify datetime',
+    `log_created`   timestamp     NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT 'create datetime',
+    `log_modified`  timestamp     NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT 'modify datetime',
     PRIMARY KEY (`id`),
     UNIQUE KEY `ux_undo_log` (`xid`, `branch_id`)
 ) ENGINE = InnoDB AUTO_INCREMENT = 1 DEFAULT CHARSET = utf8 COMMENT ='AT transaction mode undo table';
