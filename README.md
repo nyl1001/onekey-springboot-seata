@@ -58,11 +58,10 @@ public String deductWareHouse(@RequestParam("commodityId") String commodityId,
 curl -X GET http://localhost:9003/coupon/redisController/deduct?commodityId=1&count=2
 ```
 
-## 3 本示例项目是以nacos作为注册中心和配置中心，对于以zookeeper作为注册中心和配置中心的项目，可以参考官网上的如下样例
+## 3 本示例项目是以nacos作为注册中心和配置中心，对于以zookeeper作为注册中心和配置中心的项目，请直接参考本人另外一个示例项目进行配置操作：
+[spring boot + dubbo + zookeeper + seata 整合示例](https://github.com/nyl1001/springboot-dubbo-seata-zk)
 
-https://github.com/seata/seata-samples/tree/master/springboot-dubbo-seata-zk
-
-这个官网示例是通过 SpringBoot2.1.5 + Dubbo 2.7.3 + Mybatis 3.4.2 + Zookeeper 3.4.14 +Seata 0.9.0 整合来实现Dubbo分布式事务管理，使用Zookeeper作为Dubbo和Seata的注册中心和配置中心,使用 MySQL 数据库和 MyBatis来操作数据。
+本示例是通过 SpringBoot2.1.5 + Dubbo 2.7.3 + Mybatis 3.4.2 + Zookeeper 3.7 +Seata Server 1.4.2 整合来实现Dubbo分布式事务管理，使用Zookeeper作为Dubbo和Seata的注册中心和配置中心,使用 MySQL 数据库和 MyBatis来操作数据。
 
 
 ## 4 其他
